@@ -413,6 +413,42 @@
       .article .post-cta h2 { margin-top: 0; font-size: 21px; }
       .article .post-cta .btn { margin-top: 16px; }
 
+      /* Guide post: traps & checklist */
+      .subtitle { font-size: 19px; color: var(--ink-soft); margin-top: 12px; max-width: 38em; }
+      .trap { margin-top: 30px; }
+      .trap-head { display: flex; align-items: center; gap: 13px; }
+      .trap-num {
+        font-family: "Sora", sans-serif; font-weight: 700; font-size: 15px;
+        width: 36px; height: 36px; flex: none; border-radius: 50%;
+        background: var(--gold); color: #10233f; display: grid; place-items: center;
+      }
+      .trap h3 { font-size: 19.5px; font-weight: 600; }
+      .trap .fix {
+        margin-top: 12px; background: var(--surface-soft);
+        border-radius: 12px; padding: 14px 18px;
+        font-size: 16.5px; color: var(--ink-soft);
+      }
+      .trap .fix strong { color: var(--primary-deep); }
+      .honest-note {
+        margin-top: 36px; background: var(--surface-gold);
+        border-radius: var(--radius); padding: 22px 26px;
+        color: var(--ink-soft); font-size: 16.5px;
+      }
+      .honest-note strong { color: var(--ink); }
+      .check-group { margin-top: 24px; }
+      .check-group h3 { font-size: 19px; font-weight: 600; }
+      ul.check { list-style: none; margin: 10px 0 0; padding: 0; }
+      ul.check li {
+        padding: 6px 0 6px 28px; position: relative;
+        font-size: 16.5px; color: var(--ink-soft); font-weight: 600; margin-top: 0;
+      }
+      ul.check li::before {
+        content: ""; position: absolute; left: 2px; top: 14px;
+        width: 13px; height: 7px;
+        border-left: 2.5px solid var(--green); border-bottom: 2.5px solid var(--green);
+        transform: rotate(-45deg);
+      }
+
       @media (prefers-reduced-motion: reduce) {
         html { scroll-behavior: auto; }
       }
@@ -867,11 +903,11 @@
             <p>Clicks are easy to buy. Customers are not. Why I measure every campaign against qualified leads and booked appointments — and what that changes about keywords, bidding and tracking.</p>
             <span class="card-link">Read the post →</span>
           </a>
-          <a class="case-card" href="#/blog">
-            <span class="badge-soon">Coming soon</span>
-            <h3>More posts are on the way</h3>
-            <p>Upcoming topics include the questions to ask before hiring a Google Ads manager, and how to tell whether your conversion tracking is telling you the truth.</p>
-            <span class="card-link">In preparation</span>
+          <a class="case-card" href="#/blog/google-ads-hidden-traps-guide">
+            <span class="badge-live">Read the post</span>
+            <h3>The Google Ads Hidden Traps Guide</h3>
+            <p>14 default settings that quietly waste your ad budget — and the simple fix for each one. Plain English, dental clinic examples, and a one-page checklist at the end.</p>
+            <span class="card-link">Read the post →</span>
           </a>
         </div>
       </div>
@@ -913,6 +949,173 @@
             <h2>Want this standard applied to your ads?</h2>
             <p>If you run a dental clinic or a local business and you are not sure your ads are bringing the right customers, send me a message and tell me about your business.</p>
             <a class="btn btn-wa" href="https://wa.me/8801616209034" target="_blank" rel="noopener">Message me on WhatsApp</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- ============ PAGE: BLOG POST — HIDDEN TRAPS GUIDE ============ -->
+    <main data-view="post-hidden-traps" hidden>
+      <div class="wrap">
+        <div class="page-head">
+          <a class="back-link" href="#/blog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All blog posts</a>
+        </div>
+        <article class="article">
+          <h1 style="font-size: clamp(30px, 4.6vw, 42px); font-weight: 700;">The Google Ads Hidden Traps Guide</h1>
+          <p class="subtitle">14 default settings that quietly waste your ad budget — and the simple fix for each one.</p>
+          <p class="post-meta">By Nasrin Akther, Google Ads Specialist and Performance Marketing Strategist, Ads by Nasrin · 5 November 2026</p>
+
+          <p>Google Ads opens with settings already chosen for you. Most of them help Google spend your budget faster. They do not always help you get booked appointments. This guide shows you what to check before that costs you money.</p>
+          <ul>
+            <li>Written in plain English. No jargon, no long theory.</li>
+            <li>Dental clinic examples, so you can picture your own ads.</li>
+            <li>A one-page checklist at the end. Print it and tick as you go.</li>
+          </ul>
+
+          <h2>Defaults are not set for your clinic</h2>
+          <p>When you build a new campaign, Google pre-ticks a lot of boxes. Each one looks harmless. Together, they can send your ads to the wrong people, at the wrong time, for the wrong searches. You do not need a big budget to fix this. You need to check the settings, one by one. Here are the first three.</p>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">1</span><h3>Search and Display mixed in one campaign</h3></div>
+            <p>A person typing "emergency dentist near me" is ready to book. A person scrolling a random website is not. When both networks sit in one campaign, they share one budget and the cheap Display clicks can eat it.</p>
+            <p class="fix"><strong>Fix:</strong> Keep Search and Display in separate campaigns. For most clinics, start with Search only.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">2</span><h3>Ads showing to people outside your area</h3></div>
+            <p>Targeting Dublin does not mean only people in Dublin see your ad. The loose location setting also shows ads to people who are just interested in that area, including people who will never travel to your clinic.</p>
+            <p class="fix"><strong>Fix:</strong> In Location options, choose Presence: People in or regularly in your targeted locations.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">3</span><h3>Ads running when nobody can answer</h3></div>
+            <p>If your ad runs at 11 pm and the phone goes to voicemail, you pay for a call that goes nowhere. Wasted clicks at night and on closed days add up fast.</p>
+            <p class="fix"><strong>Fix:</strong> Set an ad schedule that matches the hours your team can answer and book. If you take real emergencies around the clock, keep a separate emergency campaign for those hours instead.</p>
+          </div>
+
+          <h2>Smart bidding is only as good as your tracking</h2>
+          <p>These four catch clinics out because nothing looks broken. The campaign runs, clicks come in, and the money still leaks.</p>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">4</span><h3>No proper conversion tracking</h3></div>
+            <p>If calls, booking forms and appointment requests are not tracked as conversions, Google cannot tell a booked patient from a casual click. It will optimise for the wrong thing.</p>
+            <p class="fix"><strong>Fix:</strong> Track calls, form submissions and bookings first. Count only real enquiries as primary conversions, not page views.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">5</span><h3>The wrong bidding strategy for your stage</h3></div>
+            <p>A brand new campaign has no history. Handing it a sales target on day one, or following every prompt to raise bids and budgets, usually means paying more before you have learned anything.</p>
+            <p class="fix"><strong>Fix:</strong> Start controlled while data is thin. Move to Target CPA or Target ROAS only when you have steady, correctly tracked conversions to learn from.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">6</span><h3>Recommendations switched on automatically</h3></div>
+            <p>Google shows helpful-looking suggestions, and some accounts apply them on their own. A suggestion can change your keywords, ads or budget without you ever reading it properly.</p>
+            <p class="fix"><strong>Fix:</strong> Turn off auto-apply. Read each recommendation, keep what fits your goal, and dismiss the rest.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">7</span><h3>Only one ad, left to run itself</h3></div>
+            <p>One ad means one message tested against every patient. You never find out which headline actually brings calls. Old guides told you to rotate ads forever — that setting is gone now, so testing has to be planned.</p>
+            <p class="fix"><strong>Fix:</strong> Write ads with varied headlines about the real problem, such as tooth pain or implants. Check asset performance, and replace weak headlines with new ones.</p>
+          </div>
+
+          <h2>Stop paying for searches and sites you never wanted</h2>
+          <p>Clicks feel like progress. Irrelevant clicks are just a bill. These four decide who actually sees and clicks your ads.</p>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">8</span><h3>Starting with Broad Match only</h3></div>
+            <p>One broad word like "dentist" or "implants" can mean many things. Someone may want a job, a course, free treatment or a clinic in another country. You pay for all of it.</p>
+            <p class="fix"><strong>Fix:</strong> Start core campaigns on Phrase and Exact Match, with clear searches like "emergency dentist near me". Test Broad later, only with tracking, negatives and a budget you control.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">9</span><h3>No negative keywords</h3></div>
+            <p>Without negatives, your ads can show for searches you would never pay for. Think "free", "jobs", "salary", "DIY" and treatments you do not offer.</p>
+            <p class="fix"><strong>Fix:</strong> Add a starter negative list before launch. Then read the Search Terms report every week and add new waste as negatives.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">10</span><h3>No placement exclusions on Display and video</h3></div>
+            <p>Your ad can end up on phone games, odd apps and websites that have nothing to do with your clinic. The clicks are cheap because nobody there wants a dentist.</p>
+            <p class="fix"><strong>Fix:</strong> Review where your ads appeared and exclude poor placements. Keep a shared exclusion list you can use again.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">11</span><h3>No content or brand safety exclusions</h3></div>
+            <p>Irrelevant is one problem. Sensitive or unsuitable content next to your clinic name is another. It does not suit a trusted local business.</p>
+            <p class="fix"><strong>Fix:</strong> Set your inventory and content exclusions in account settings, and review the sensitive categories instead of leaving them open.</p>
+          </div>
+
+          <h2>The right click can still be wasted at the end</h2>
+          <p>Sometimes the keyword and the ad are fine. The loss happens in the area you target, the page the person lands on, and the detail missing from the ad itself.</p>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">12</span><h3>Targeting a whole city instead of your real patients</h3></div>
+            <p>A full city, or a wide radius around it, covers people who will never drive to you. Your budget gets spread thin across areas that rarely book.</p>
+            <p class="fix"><strong>Fix:</strong> Start with where your current patients actually come from. Use your call and booking records, postcodes or ZIP codes, and build tighter areas around the places that already send you patients.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">13</span><h3>Sending every click to your homepage</h3></div>
+            <p>Someone searching for implants lands on a general homepage and has to hunt for the right page. Many will not bother. They go back and click the next clinic.</p>
+            <p class="fix"><strong>Fix:</strong> Give each main treatment its own page — implants, emergency care, Invisalign — with a clear call button and booking option on that page.</p>
+          </div>
+
+          <div class="trap">
+            <div class="trap-head"><span class="trap-num">14</span><h3>Missing or weak ad assets</h3></div>
+            <p>Assets are the extra parts of your ad: the call button, your location, callouts and structured snippets. A plain ad takes up less space and gives a patient fewer reasons to pick you.</p>
+            <p class="fix"><strong>Fix:</strong> Add call and location assets, callouts such as "Evening appointments", and snippets that list your real treatments. Only claim what you truly offer.</p>
+          </div>
+
+          <div class="honest-note">
+            <strong>One honest note.</strong> Older checklists you may find online still mention Manual CPC as the safe choice, Enhanced CPC, Accelerated delivery and rotating ads indefinitely. Those options have been removed from Google Ads, so do not go looking for them in your account. The fixes in this guide are the ones that match how the platform works now.
+          </div>
+
+          <h2>Your one-page Hidden Traps checklist</h2>
+
+          <div class="check-group">
+            <h3>Before you launch</h3>
+            <ul class="check">
+              <li>Search and Display are in separate campaigns</li>
+              <li>Location is set to Presence: people in or regularly in your area</li>
+              <li>Ad schedule matches the hours your team can answer</li>
+              <li>Calls, forms and bookings are tracked as conversions</li>
+              <li>Auto-apply for recommendations is off</li>
+              <li>Starter negative keyword list is added</li>
+            </ul>
+          </div>
+
+          <div class="check-group">
+            <h3>In the first week</h3>
+            <ul class="check">
+              <li>Bidding fits your stage — no target set on guesswork</li>
+              <li>Core keywords are Phrase and Exact, not Broad only</li>
+              <li>Each treatment sends clicks to its own page, not the homepage</li>
+              <li>Call, location, callout and snippet assets are live</li>
+            </ul>
+          </div>
+
+          <div class="check-group">
+            <h3>Every week</h3>
+            <ul class="check">
+              <li>Search Terms report checked, new waste added as negatives</li>
+              <li>Placements and content exclusions reviewed</li>
+              <li>Target area checked against where enquiries really came from</li>
+              <li>Weak ad headlines replaced, strong ones kept</li>
+            </ul>
+          </div>
+
+          <h2>About Nasrin</h2>
+          <p>I'm Nasrin Akther, a Google Ads Specialist. I help dental clinics and other local businesses get enquiries they can actually book, not just clicks. My work starts with the business goal, then the keywords, the ad and the page are made to match it. Follow Ads by Nasrin for short, practical Google Ads tips like these — and share this guide with a clinic owner who runs their own ads.</p>
+
+          <div class="post-cta">
+            <h2>Want a second pair of eyes on your account?</h2>
+            <p>Book a free 30-minute call and we will look at your Google Ads together — what is working, what is wasting budget, and what to fix first.</p>
+            <a class="btn btn-book" href="https://cal.com/nasrin-akther-gadshub/30min" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg>
+              Book a free 30-minute call
+            </a>
           </div>
         </article>
       </div>
@@ -970,6 +1173,11 @@
             title: "Booked Appointments, Not Clicks: How I Judge a Google Ads Campaign | Nasrin Akther",
             description: "Clicks don't pay the bills — customers do. Nasrin Akther explains why she measures Google Ads on qualified leads and booked appointments, and what that changes about keywords, bidding and tracking.",
             type: "article"
+          },
+          "post-hidden-traps": {
+            title: "The Google Ads Hidden Traps Guide — 14 Settings That Waste Your Budget | Nasrin Akther",
+            description: "14 default Google Ads settings that quietly waste your ad budget — and the simple fix for each one. A plain-English guide with dental clinic examples and a one-page checklist, by Nasrin Akther.",
+            type: "article"
           }
         };
 
@@ -979,7 +1187,8 @@
           "/case-studies/local-services": "case-local",
           "/case-studies/ecommerce": "case-ecommerce",
           "/blog": "blog",
-          "/blog/booked-appointments-not-clicks": "post-1"
+          "/blog/booked-appointments-not-clicks": "post-1",
+          "/blog/google-ads-hidden-traps-guide": "post-hidden-traps"
         };
 
         function setMeta(name, value, attr) {
